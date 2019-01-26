@@ -55,11 +55,11 @@ CharacterStats.prototype.takeDamage = function() {
 */
 
 function Humanoid(attributes) {
-  
+  CharacterStats.call(this, attributes);
   this.team = attributes.Humanoid;
   this.weapons = attributes.Humanoid;
   this.language = attributes.Humanoid;
-  CharacterStats.call(this, attributes);
+  
 }// Humanoid
 
 Humanoid.prototype = Object.create(CharacterStats.prototype);
